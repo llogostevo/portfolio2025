@@ -45,7 +45,7 @@ export function CaseStudy({ title, company, year, image, problem, solution, outc
       </div>
 
       <div className={`${index % 2 === 1 ? "md:order-1" : ""}`}>
-        <div className="relative aspect-[4/3] overflow-hidden rounded-lg border border-border bg-muted">
+        <div className="relative aspect-4/3 overflow-hidden rounded-lg border border-border bg-muted">
           <Image src={image || "/placeholder.svg"} alt={`${title} preview`} fill className="object-cover" />
         </div>
       </div>
